@@ -86,3 +86,16 @@ function previousSection() {
     currentSectionIndex = (currentSectionIndex - 1 + sections.length) % sections.length;
     sections[currentSectionIndex].classList.add('active');
 }
+
+// Modern title h2
+document.addEventListener("DOMContentLoaded", function() {
+    const title = document.querySelector(".modern-title");
+
+    title.addEventListener("mouseover", function() {
+        title.classList.add("animate");
+    });
+
+    title.addEventListener("mouseout", function() {
+        title.classList.remove("animate");
+    });
+});
