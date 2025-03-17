@@ -51,7 +51,7 @@ header {
     background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
-    height: 350px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,6 +146,13 @@ nav .nav-links li a:hover {
     background-color: #f4f4f4;
     padding: 40px 0;
     text-align: center;
+}
+
+/* Estilo de fondo negro para la separación */
+.separator-container0 {
+    background-color: rgba(0, 0, 0, 0.844); /* Fondo negro */
+    padding: 5px 0; /* Espaciado alrededor del separador */
+    height: 13px;
 }
 
 .about-me .container {
@@ -327,15 +334,17 @@ nav .nav-links li a:hover {
 
 /* Image Column */
 .image-column {
-    flex: 1;
-    text-align: center;
+    flex: 0 0 120px; /* Mantener el tamaño de la imagen con flexibilidad */
+    display: flex;
+    justify-content: center;
 }
 
 .image-column img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d48600;
 }
 
 /* Title Column */
@@ -369,7 +378,8 @@ nav .nav-links li a:hover {
     }
 
     .image-column, .title-column, .description-column {
-        flex: none;
+        flex: 1; /* Esto asegura que las columnas ocupen el espacio restante */
+    padding: 10px;
         width: 100%;
         margin-bottom: 15px;
     }
@@ -378,7 +388,44 @@ nav .nav-links li a:hover {
         max-width: 80%;
     }
 }
+/* Estudios - Imágenes redondas */
+.round-image img {
+    border-radius: 50%; /* Hace que las imágenes sean redondas */
+}
 
+/* Tecnologías y habilidades - Imágenes cuadradas */
+.square-image img {
+    border-radius: 3%; /* Asegura que las imágenes sean cuadradas */
+    border: none;
+}
+
+/* Estilos generales para las imágenes */
+.image-column img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect para imágenes */
+.image-column img:hover {
+    transform: scale(1.05);  /* Hace la imagen ligeramente más grande al pasar el ratón */
+}
+
+
+/* Make the content more centered and modern */
+.knowledge-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 0;
+}
 
 
 
