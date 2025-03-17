@@ -1,20 +1,347 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Light gray background */
 }
 
-h1 {
-    color: #4CAF50;
+/* Back to Top Button */
+.back-to-top-btn {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000000; /* Negro */
+    color: #00bcd4; /* Flecha azul clara */
+    border: none;
+    border-radius: 25px; /* Bordes más ovalados */
+    padding: 15px 30px; /* Ajustamos el padding para que esté equilibrado */
+    font-size: 18px; /* Tamaño de la letra */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alineamos el contenido del botón */
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+.back-to-top-btn:hover {
+    background-color: #333333; /* Fondo negro oscuro al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top-btn:focus {
+    outline: none;
+}
+
+/* Flecha en el botón */
+.back-to-top-btn::before {
+    content: '\2191'; /* Símbolo de flecha hacia arriba */
+    font-size: 30px; /* Aumentamos el tamaño de la flecha */
+    color: #00bcd4; /* Flecha azul clara */
+    font-weight: bold; /* Hacerla más fuerte */
+    display: inline-block;
+    margin-right: 0; /* Eliminamos el margen a la derecha de la flecha */
+}
+
+/* Header section */
+header {
+    background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Overlay to improve text visibility */
+header .overlay {
+    position: absolute;
+    padding-bottom: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
+    flex-direction: column;
+    z-index: 1; /* Set a lower z-index to ensure the overlay stays behind */
+}
+
+/* Header title */
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* Language selector buttons */
+.language-selector {
+    margin-top: 30px; /* Add margin of 30px */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative; /* Add relative positioning */
+    z-index: 2; /* Set a higher z-index to ensure it's above the overlay */
+}
+
+.language-btn {
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+.flag-icon {
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.language-btn:hover .flag-icon {
+    transform: scale(1.1);
+}
+
+/* Navigation menu */
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+nav .nav-links li {
+    display: inline;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav .nav-links li a:hover {
+    background-color: #00bcd4;
+    transform: scale(1.1);
+}
+
+/* About Me section */
+.about-me {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-me .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me .photo {
+    flex: 1;
+    padding-right: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me .photo img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00bcd4;
+}
+
+.about-me .description {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.about-me .description h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.about-me .description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Separator for visual distinction */
+.separator {
+    height: 6px; /* Aumenté el grosor de la barra */
+    background: linear-gradient(to right, #00bcd4, #ffffff);
+    border-radius: 50px; /*Barra redonda*/
+    margin: 12px 0;
+    width: 85%; /* Un poco más ancha que antes */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo de fondo negro para la separación */
+.separator-container {
+    background-color: black; /* Fondo negro */
+    padding: 5px 0; /* Espaciado alrededor del separador */
+    border-radius: 50px; /* Hace que la barra negra sea redonda */
+    height: 30px;
+}
+
+
+
+
+/* Knowledge Acquired section */
+.knowledge-acquired {
+    background: linear-gradient(to right, #4b4b4b, #1c1c1c); /* Gradient to dark grey */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    border-radius: 10%;
+}
+
+/* Section title */
+.knowledge-acquired h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    letter-spacing: 1px; /* Added spacing between letters for a more modern feel */
+    text-transform: uppercase; /* Optional: capitalized text */
+}
+
+/* Slider container for rotating sections */
+.knowledge-slider {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+/* Section content container */
+.knowledge-section {
+    display: none;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Active section */
+.knowledge-section.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* New layout for the content */
+.knowledge-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    transform: translateY(-30px); /* Lift the content slightly */
+    transition: transform 0.3s ease-in-out; /* Smooth animation for slight lift */
+}
+
+/* Hover effect on content */
+.knowledge-content:hover {
+    transform: translateY(-10px); /* Slight bounce effect */
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    margin-right: 40px; /* Space between left and right columns */
+    font-family: 'Arial', sans-serif;
+}
+
+.left-column h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.left-column p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.right-column p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.navigation-buttons button:hover {
+    background-color: #007c8a;
+    transform: scale(1.1); /* Button scale effect */
+}
+
+/* Smooth Scroll Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.knowledge-section {
+    animation: fadeInUp 1s ease-out;
 }

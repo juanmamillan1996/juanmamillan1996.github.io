@@ -3,13 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title id="page-title">Welcome to my website, Juan Manuel!</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wikimania2019_person_icon.svg/640px-Wikimania2019_person_icon.svg.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>¡Bienvenido a mi página web!</h1>
-    <p>Esto es un proyecto en GitHub Pages.</p>
-    <button onclick="saludar()">Haz clic para saludar</button>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn"></button>
+
+    <!-- Google Translate Button -->
+    <div id="google_translate_element"></div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="overlay">
+            <h1 id="header-title">My Professional Profile</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a id="nav-acerca" href="#acerca-de-mi">About me</a></li>
+                    <li><a id="nav-conocimientos" href="#conocimientos">Knowledge Acquired</a></li>
+                    <li><a id="nav-contactame" href="#contacto">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Language Switch Buttons -->
+        <div class="language-selector">
+            <button class="language-btn" id="espanol-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" alt="Español" class="flag-icon">
+            </button>
+            <button class="language-btn" id="english-btn">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8UfN4n82wlMz4PflqDM3e84G9GgXNKcmKQ&s" alt="English" class="flag-icon">
+            </button>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="acerca-de-mi" class="about-me">
+        <div class="container">
+            <div class="photo">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQG-ZWyymkSDew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731717934454?e=1747267200&v=beta&t=c9t1HT1iM0nCpq7JQ7RdECk1b46f7WIdNKkhfD_J9BI" alt="Juan Manuel Millán" />
+            </div>
+            <div class="description">
+                <h2>About Me</h2>
+                <p id="about-me-description">
+                    Hi all, my name is Juan Manuel Millán, a graduate in Web and Multiplatform Application Development. Currently residing in Dublin for the past 3 years, I have +2 years of experience in the technology sector, having worked for Deloitte Spain and Accenture Ireland on large-scale projects. <br> <br>
+                    
+                    My education in Web Application Development provided me with a strong technical foundation, which I have further developed through my professional experience. I have worked on creating business solutions using SAP ABAP and FIORI along with technologies such as JavaScript, HTML, Python, CSS, among others. My work has focused on improving operational efficiency by implementing intuitive and functional applications. <br><br>
+                    
+                    I am passionate about technology in general and I am constantly updating my skills in new languages and tools to continue broadening my knowledge. I am fluent in both Spanish and English, enabling me to work in international environments and collaborate with teams from diverse cultural backgrounds. <br> <br>
+                    
+                    My goal is to continue growing and learning, tackling new challenges that allow me to add value to organizations and contribute to the advancement of technology.                
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator with black background -->
+    <div class="separator-container">
+        <div class="separator"></div>
+    </div>
+
+<!-- Knowledge Acquired Section -->
+<section id="conocimientos" class="knowledge-acquired">
+    <div class="container">
+        <h2>Conocimientos Adquiridos</h2>
+        <div class="knowledge-slider" id="knowledge-slider">
+            <!-- Studies Section -->
+            <div class="knowledge-section active" id="studies">
+                <div class="knowledge-content">
+                    <div class="left-column">
+                        <h3>Estudios</h3>
+                        <p>Graduado en Bachillerato de rama tecnológica</p>
+                        <p>Titulado en Grado Superior de Desarrollo de Aplicaciones Web y Multiplataforma</p>
+                    </div>
+                    <div class="right-column">
+                        <p>Durante mis estudios, adquirí conocimientos en áreas clave de la tecnología y la ingeniería, incluyendo matemáticas aplicadas, física, programación básica y fundamentos de electrónica. 
+                            Desarrollé habilidades en resolución de problemas, pensamiento lógico y análisis de datos, proporcionando una base sólida para estudios superiores en desarrollo web y tecnología.</p>
+                        <p>En mi formación superior, adquirí conocimientos avanzados en desarrollo de aplicaciones web y multiplataforma, incluyendo lenguajes como Java, HTML, CSS, JavaScript y SQL. 
+                            Aprendí sobre arquitectura de software, bases de datos, desarrollo front-end y back-end, además de metodologías ágiles y gestión de servidores.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses Section -->
+            <div class="knowledge-section" id="courses">
+                <div class="knowledge-content">
+                    <div class="left-column">
+                        <h3>Cursos</h3>
+                        <p>Curso de Desarrollo Web Full Stack</p>
+                        <p>Curso de Programación en JavaScript</p>
+                    </div>
+                    <div class="right-column">
+                        <p>A lo largo de mi carrera, he participado en diversos cursos relacionados con el desarrollo web, donde profundicé mis conocimientos en JavaScript, desarrollo full stack y bases de datos, con enfoque en tecnologías modernas como Node.js, React, y bases de datos no relacionales como MongoDB.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="knowledge-section" id="certifications">
+                <div class="knowledge-content">
+                    <div class="left-column">
+                        <h3>Certificaciones</h3>
+                        <p>Certificación en Desarrollo de Aplicaciones Web</p>
+                        <p>Certificación en Ciberseguridad</p>
+                    </div>
+                    <div class="right-column">
+                        <p>He obtenido certificaciones importantes en el ámbito del desarrollo web, incluyendo una en Desarrollo de Aplicaciones Web Full Stack, que me ha permitido dominar varias tecnologías clave. También he recibido formación en ciberseguridad para fortalecer mis conocimientos sobre protección de datos y seguridad en la web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+            <!-- Navigation Buttons -->
+            <div class="navigation-buttons">
+                <button onclick="previousSection()">Anterior</button>
+                <button onclick="nextSection()">Siguiente</button>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
