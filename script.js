@@ -99,3 +99,14 @@ document.addEventListener("DOMContentLoaded", function() {
         title.classList.remove("animate");
     });
 });
+
+
+
+// ContactForm.js (JavaScript - Lógica del Formulario)
+// Este script puede ser utilizado para alguna validación si lo necesitas
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir envío predeterminado
+  
+    // Aquí podrías agregar validación personalizada si es necesario
+    alert('Formulario enviado correctamente. ¡Gracias por tu mensaje!');
+  });

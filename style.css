@@ -382,6 +382,7 @@ nav .nav-links li a:hover {
     padding: 10px;
         width: 100%;
         margin-bottom: 15px;
+        object-fit: cover;
     }
 
     .image-column img {
@@ -397,6 +398,11 @@ nav .nav-links li a:hover {
 .square-image img {
     border-radius: 3%; /* Asegura que las imágenes sean cuadradas */
     border: none;
+}
+
+.square-white-image img {
+    border-radius: 5%; /* Asegura que las imágenes sean cuadradas */
+    border: 2px solid rgb(252, 252, 252);
 }
 
 /* Estilos generales para las imágenes */
@@ -428,24 +434,106 @@ nav .nav-links li a:hover {
 }
 
 
-
-
-/* Separator for visual distinction number 1 */
-.separator1 {
-    height: 6px; /* Aumenté el grosor de la barra */
+/*Contactame*/
+/* Estilos del contenedor del formulario */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c9c9;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(41, 41, 41, 0.1);
+    padding: 2rem;
+    width: 73.5%;
+    margin-left: 15%; /* Desplazamos el contenedor un 25% desde la izquierda */
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  button {
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Separador */
+  .separator1 {
+    height: 6px;
     background: linear-gradient(to right, #ea9f4e, #ffffff);
-    border-radius: 50px; /*Barra redonda*/
+    border-radius: 50px;
     margin: 12px 0;
-    width: 98%; /* Un poco más ancha que antes */
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Estilo de fondo negro para la separación */
-.separator-container1 {
-    background-color: black; /* Fondo negro */
-    padding: 5px 0; /* Espaciado alrededor del separador */
+  }
+  
+  .separator-container1 {
+    background-color: black;
+    padding: 5px 0;
     height: 30px;
-}
-
+  }
+  
+  /* Asegurarse de que se vea bien en pantallas pequeñas */
+  @media (max-width: 600px) {
+    .contact-container {
+      padding: 1rem;
+      width: 95%; /* Asegura que el contenedor ocupe el 95% del ancho en pantallas pequeñas */
+    }
+  }
 
