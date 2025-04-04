@@ -1,276 +1,387 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Welcome to my website, Juan Manuel!</title>
-    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wikimania2019_person_icon.svg/640px-Wikimania2019_person_icon.svg.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top-btn"></button>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="page-title">Welcome to my website, Juan Manuel!</title>
+        <link rel="icon" type="image/png"
+            href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wikimania2019_person_icon.svg/640px-Wikimania2019_person_icon.svg.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="google_translate_element"></div>
 
-    <!-- Google Translate Button -->
-    <div id="google_translate_element"></div>
-
-    <!-- Header Section -->
-    <header>
-        <div class="overlay">
-            <h1 id="header-title">My Professional Profile</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a id="nav-acerca" href="#acerca-de-mi">About me</a></li>
-                    <li><a id="nav-conocimientos" href="#conocimientos">Knowledge Acquired</a></li>
-                    <li><a id="nav-contactame" href="#contacto">Contact me</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <!-- Language Switch Buttons -->
-        <div class="language-selector">
-            <button class="language-btn" id="espanol-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" alt="Español" class="flag-icon">
-            </button>
-            <button class="language-btn" id="english-btn">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8UfN4n82wlMz4PflqDM3e84G9GgXNKcmKQ&s" alt="English" class="flag-icon">
-            </button>
-        </div>
-    </header>
-
-    <!-- Separator 1 with black background -->
-<div class="separator-container0">
-    <div class="separator0"></div>
-</div>
-
-    <!-- About Me Section -->
-    <section id="acerca-de-mi" class="about-me">
-        <div class="container">
-            <div class="photo">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQG-ZWyymkSDew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731717934454?e=1747267200&v=beta&t=c9t1HT1iM0nCpq7JQ7RdECk1b46f7WIdNKkhfD_J9BI" alt="Juan Manuel Millán" />
+        <header>
+            <div class="language-selector">
+                <button class="language-btn" id="espanol-btn">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png"
+                        alt="Español" class="flag-icon">
+                </button>
+                <button class="language-btn" id="english-btn">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8UfN4n82wlMz4PflqDM3e84G9GgXNKcmKQ&s"
+                        alt="English" class="flag-icon">
+                </button>
             </div>
-            <div class="description">
-                <h2>About Me</h2>
-                <p id="about-me-description">
-                    Hi all, my name is Juan Manuel Millán, a graduate in Web and Multiplatform Application Development. Currently residing in Dublin for the past 3 years, I have +2 years of experience in the technology sector, having worked for Deloitte Spain and Accenture Ireland on large-scale projects. <br> <br>
+            <div class="overlay">
+                <h1 id="header-title">My Professional Profile</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a id="nav-acerca" href="#acerca-de-mi">About
+                                me</a></li>
+                        <li class="dropdown">
+                            <a id="nav-conocimientos" href="#conocimientos"
+                                class="dropbtn" >Knowledge Acquired</a>
+                            <div class="dropdown-content">
+                                <a id="nav-estudios" href="#Estudios">Studies</a>
+                                <a id="nav-tecnologias" href="#Tecnologias">Technologies and Skills</a>
+                                <a id="nav-certificaciones" href="#Certificaciones">Certifications</a>
+                            </div>
+                        </li>
+                        <li><a id="nav-contactame" href="#contacto">Contact
+                                me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="separator-container0">
+            <div class="separator0"></div>
+        </div>
+
+        <section id="acerca-de-mi" class="about-me">
+            <div class="container">
+                <div class="photo">
+                    <img
+                        src="https://media.licdn.com/dms/image/v2/D4D03AQG-ZWyymkSDew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731717934454?e=1747267200&v=beta&t=c9t1HT1iM0nCpq7JQ7RdECk1b46f7WIdNKkhfD_J9BI"
+                        alt="Juan Manuel Millán" />
+                </div>
+                <div class="description">
+                    <h2 id="about-me-title">About Me</h2>
+                    <p id="about-me-description">
+                        Hi all, my name is Juan Manuel Millán, a graduate in Web
+                        and Multiplatform Application Development. Currently
+                        residing in Dublin for the past 3 years, I have +2 years
+                        of experience in the technology sector, having worked
+                        for Deloitte Spain and Accenture Ireland on large-scale
+                        projects. <br> <br>
+
+                        My education in Web Application Development provided me
+                        with a strong technical foundation, which I have further
+                        developed through my professional experience. I have
+                        worked on creating business solutions using SAP ABAP and
+                        FIORI along with technologies such as JavaScript, HTML,
+                        Python, CSS, among others. My work has focused on
+                        improving operational efficiency by implementing
+                        intuitive and functional applications. <br><br>
+
+                        I am passionate about technology in general and I am
+                        constantly updating my skills in new languages and tools
+                        to continue broadening my knowledge. I am fluent in both
+                        Spanish and English, enabling me to work in
+                        international environments and collaborate with teams
+                        from diverse cultural backgrounds. <br> <br>
+
+                        My goal is to continue growing and learning, tackling
+                        new challenges that allow me to add value to
+                        organizations and contribute to the advancement of
+                        technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenedor de estudios (inicialmente oculto) -->
+        <span id="Estudios"></span>
+        <section class="knowledge-acquired" id="conocimientos">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="toggle-studies" class="accordion-header">Studies</button>
+                    <div id="studies-collapsible" class="studies-section"
+                        style="display: flex;">
+                        <div class="study-item">
+                            <div class="image-column-0">
+                                <img
+                                    src="https://www.estudiadeporte.com/wp-content/uploads/ies-juan-de-mairena-estudia-deporte-150x150.jpg"
+                                    alt="Graduado">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="study-title-1">Bachelor in Science and Technology</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="study-description-1">Pre-university studies specialized in the technological area with a 7.5 average grade.</p>
+                            </div>
+                        </div>
+                        <div class="study-item">
+                            <div class="image-column-0">
+                                <img
+                                    src="https://media.licdn.com/dms/image/v2/D4D0BAQEvkC1fJB0ivQ/company-logo_200_200/company-logo_200_200/0/1695716979653/grupo_studium_formacion_logo?e=1750291200&v=beta&t=A-v7TUy-yJ4HswXWVk9UDzV6ngmzkb1rT46zIaBgMB0"
+                                    alt="Titulado">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="study-title-2">Graduate in Web and Multiplatform Application Development</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="study-description-2">Specialized training in web and multiplatform application development with a comprehensive focus on software architecture, design, and optimization.</p>
+                            </div>
+                        </div>
+                        <div class="study-item">
+                            <div class="image-column-0">
+                                <img
+                                    src="https://www.britishcouncil.al/sites/default/files/aptis_logo.001_0.png"
+                                    alt="B2">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="study-title-3">B2 English Certification</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="study-description-3">Official B2 level English certification, enabling fluent communication in international environments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón para mostrar/ocultar tecnologías -->
+                    <span id="Tecnologias"></span>
+                    <button id="toggle-technologies" class="accordion-header">Technologies and Skills</button>
+
+                    <!-- Contenedor de tecnologías (inicialmente oculto) -->
+                    <div id="technologies-collapsible" class="studies-section" style="display: flex;">
+                        <div class="study-item">
+                            <div class="image-column-1">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3S9FqOWEjqGZPQ98L55jzxu9OXbJqwXx_Gw&s" alt="Lenguajes de Programación">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="tech-title-1">Programming Languages</h4>
+                            </div>
+                            <div class="description-column">
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="20"> <strong>JavaScript (ES6+)</strong><br>
+                                    <span id="inner-JS">Modern web development with DOM manipulation, asynchrony, and API consumption.  
+                                    Experience with frameworks and libraries such as jQuery and SAP UI5.</span>
+                                </p>
+                                <p><img src="https://upload.wikimedia.org/wikipedia/de/thumb/e/e1/Java-Logo.svg/1200px-Java-Logo.svg.png" alt="Java" width="20"> <strong>Java</strong><br>
+                                    <span id="inner-Java">Object-oriented programming with a focus on enterprise application development.  
+                                    Knowledge of data structures, algorithms, and coding best practices.</span>
+                                </p>
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" width="20"> <strong>SQL</strong><br>
+                                    <span id="inner-SQL"> Design, management, and optimization of relational databases.  
+                                    Creation of efficient queries, stored procedures, and data normalization.</span>
+                                </p>
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" width="20"> <strong>Python</strong><br>
+                                    <span id="inner-Python">Application in Machine Learning, process automation, and efficient script development.  
+                                    Proficient in libraries such as Pandas, NumPy, and Scikit-Learn.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="study-item">
+                            <div class="image-column-1">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXFuxbwY90AiaEl7l1dvI65SsRNqzP0s5dMw&s" alt="Desarrollo Web">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="tech-title-2">Web Development</h4>
+                            </div>
+                            <div class="description-column">
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 & CSS3" width="20"> <strong>HTML5 & CSS3</strong><br>
+                                    <span id="inner-HTML">Creation of responsive and accessible interfaces following best development practices.  
+                                    Proficient in Flexbox, Grid, and CSS preprocessors.</span>
+                                </p>
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript & jQuery" width="20"> <strong>JavaScript (ES6+) & jQuery</strong><br>
+                                    <span id="inner-JavaS">Development of dynamic and interactive interfaces, optimizing user experience.  
+                                    Handling events, DOM manipulation, and API consumption using AJAX.</span>
+                                </p>
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg" alt="JSON & XML" width="20"> <strong>JSON & XML</strong><br>
+                                    <span id="inner-JSON">Data formatting and exchange in web applications and SAP systems.  
+                                    Experience in structuring and consuming data from REST APIs.</span>
+                                </p>
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git & GitHub" width="20"> <strong>Git & GitHub</strong><br>
+                                    <span id="inner-Git">Version control and collaborative work in development environments.  
+                                    Proficient in workflows such as Git Flow and branch management for change control.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="study-item">
+                            <div class="image-column-1">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-5LhP_Q8i_JBK8mMzn-ApcwLPH5UhTF76A&s" alt="Bases de Datos">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="tech-title-3">Databases</h4>
+                            </div>
+                            <div class="description-column">
+                                <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6E2r3hVtkc4ocdaRTdhFgObjq14DjnNnpaA&s" alt="MySQL" width="20"> <strong>MySQL</strong><br>
+                                    <span id="inner-Mysql">Design, administration, and optimization of databases for web applications.  
+                                    Experience in data modeling, index creation, and advanced queries.</span>
+                                </p>
+                                <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" width="20"> <strong>SQL</strong><br>
+                                    <span id="inner-Sql">Development of efficient queries for data extraction, analysis, and manipulation.  
+                                    Implementation of stored procedures, triggers, and database normalization.</span>
+                                </p>
+                                <p><img src="https://miro.medium.com/v2/resize:fit:1400/1*5Hnnv0awfSv0BGcq1C522w.png" alt="PhpMyAdmin" width="20"> <strong>PhpMyAdmin</strong><br>
+                                    <span id="inner-Php">Visual administration of MySQL databases for management and maintenance.  
+                                    Creation of backups, user configuration, and execution of complex queries.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     
-                    My education in Web Application Development provided me with a strong technical foundation, which I have further developed through my professional experience. I have worked on creating business solutions using SAP ABAP and FIORI along with technologies such as JavaScript, HTML, Python, CSS, among others. My work has focused on improving operational efficiency by implementing intuitive and functional applications. <br><br>
-                    
-                    I am passionate about technology in general and I am constantly updating my skills in new languages and tools to continue broadening my knowledge. I am fluent in both Spanish and English, enabling me to work in international environments and collaborate with teams from diverse cultural backgrounds. <br> <br>
-                    
-                    My goal is to continue growing and learning, tackling new challenges that allow me to add value to organizations and contribute to the advancement of technology.                
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Separator with black background -->
-    <div class="separator-container">
-        <div class="separator"></div>
-    </div>
+                    <!-- Botón para mostrar/ocultar certificaciones -->
+                    <span id="Certificaciones"></span>
+                <button id="toggle-certifications" class="accordion-header">Certifications</button>
 
-<!-- Knowledge Acquired Section -->
-<section id="conocimientos" class="knowledge-acquired">
-    <div class="container">
-        <h2 class="modern-title">Conocimientos Adquiridos</h2>
-        <div class="knowledge-slider" id="knowledge-slider">
-            
-            <!-- Studies Section -->
-<div class="knowledge-section active">
-    <div class="knowledge-content">
-        <div class="knowledge-header">
-            <h3>Estudios</h3>
-        </div>
-        <div class="content-row">
-            <div class="image-column round-image">
-                <img src="https://www.estudiadeporte.com/wp-content/uploads/ies-juan-de-mairena-estudia-deporte-150x150.jpg" alt="Estudios" class="image">
-            </div>
-            <div class="title-column">
-                <h4>Graduado en Bachillerato</h4>
-            </div>
-            <div class="description-column">
-                <p>Durante mis estudios, adquirí conocimientos en tecnología, programación y resolución de problemas.</p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="image-column round-image">
-                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEvkC1fJB0ivQ/company-logo_200_200/company-logo_200_200/0/1695716979653/grupo_studium_formacion_logo?e=1750291200&v=beta&t=A-v7TUy-yJ4HswXWVk9UDzV6ngmzkb1rT46zIaBgMB0" alt="Estudios" class="image">
-            </div>
-            <div class="title-column">
-                <h4>Titulado en Grado Superior de Desarrollo Web</h4>
-            </div>
-            <div class="description-column">
-                <p>En mi formación superior, dominé lenguajes como Java, HTML, CSS, JavaScript y SQL.</p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="image-column">
-                <img src="https://www.britishcouncil.al/sites/default/files/aptis_logo.001_0.png" alt="Certificaciones" class="image">
-            </div>
-            <div class="title-column">
-                <h4>
-                    B2 level certification of English by Aptis</h4>
-            </div>
-            <div class="description-column">
-                <p>Certificación de B2 en Inglés</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <!-- Tecnologías y habilidades Section -->
-<div class="knowledge-section">
-    <div class="knowledge-content">
-        <div class="knowledge-header">
-            <h3>Tecnologías y habilidades</h3>
-        </div>
-        <div class="content-row">
-            <div class="image-column square-image">
-                <img src="https://www.naukri.com/campus/career-guidance/wp-content/uploads/2024/03/Top-Programming-Languages-to-Learn-in-2024.png" alt="Lenguajes de Programación" class="image">
-            </div>
-            <div class="title-column">
-                <h4>Lenguajes de programación</h4>
-            </div>
-            <div class="description-column">
-                <p>He perfeccionado mis conocimientos en Java, JavaScript, PHP, Python...</p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="image-column square-image">
-                <img src="https://www.smartthingscentre.com/images/demo/course/web.jpg" alt="Desarrollo Web" class="image">
-            </div>
-            <div class="title-column">
-                <h4>Desarrollo Web</h4>
-            </div>
-            <div class="description-column">
-                <p>Aprendí las herramientas HTML5, CSS, Bootstrap...</p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="image-column square-image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkN0wrMhlrtQUIOxeN-69SZ66sTPP8jMajFg&s" alt="Bases de Datos" class="image">
-            </div>
-            <div class="title-column">
-                <h4>Bases de Datos</h4>
-            </div>
-            <div class="description-column">
-                <p>Aprendí MySQL, PHPMyAdmin, MongoDB ...</p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="image-column square-image">
-                <img src="https://yt3.googleusercontent.com/nYOjW1G2IQWESZDA5AsNAFuZKxk2vg0VRq3GHTw4xr9SdeR9c_aV17Hfx4UNu8iU0nvB8dLaMOI=s900-c-k-c0x00ffffff-no-rj" alt="SAP" class="image">
-            </div>
-            <div class="title-column">
-                <h4>SAP</h4>
-            </div>
-            <div class="description-column">
-                <p>Aprendí SAP Fiori, ABAP ...</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-            <!-- Certifications Section -->
-            <div class="knowledge-section">
-                <div class="knowledge-content">
-                    <div class="knowledge-header">
-                        <h3>Certificaciones</h3>
-                    </div>
-                    <div class="content-row">
-                        <div class="image-column square-white-image">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUPD4zrAUc1vbpSoBdqW4WFSlsYXKNGZSEyg&s" alt="Certificaciones" class="image">
+                    <!-- Contenedor de certificaciones (inicialmente oculto) -->
+                    <div id="certifications-collapsible" class="studies-section"
+                        style="display: flex;">
+                        <div class="study-item">
+                            <div class="image-column">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU97PO01iB618bXIy89J3eUHMGUghK8zMfgw&s"
+                                    alt="Certificación SAP ABAP">
+                            </div>
+                            <div class="title-column" >
+                                <h4>SAP ABAP / FIORI</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="cert-description-1">Internal certification from Deloitte in SAP ABAP / FIORI, covering development, optimization, and data management in SAP environments.</p>
+                            </div>
                         </div>
-                        <div class="title-column">
-                            <h4>SAP ABAP</h4>
+                        <div class="study-item">
+                            <div class="image-column">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9Dupo3DCwRHkpu_-sTPJ1EoC0fZb249L3g&s"
+                                    alt="Certificación SAP BTP">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="cert-title-2">Setting up an ABAP environment on SAP
+                                    BTP</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="cert-description-2">ABAP environment configuration in SAP BTP,  
+                                    integration with SAP services, and  
+                                    deployment of applications in the cloud.</p>
+                            </div>
                         </div>
-                        <div class="description-column">
-                            <p>Certificación interna de training básico Deloitte</p>
+                        <div class="study-item">
+                            <div class="image-column">
+                                <img
+                                    src="https://images.credly.com/images/88a06e5d-4c18-4672-b4a9-276984f72b16/image.png"
+                                    alt="Certificación SAP S/4HANA">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="cert-title-3">Exploring SAP S/4HANA Sales</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="cert-description-3">Overview of key sales processes in SAP S/4HANA Sales, including order management, billing, and delivery.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content-row">
-                        <div class="image-column square-white-image">
-                            <img src="https://media.licdn.com/dms/image/sync/v2/D4D27AQE7YZDDdBRCkQ/articleshare-shrink_1280_800/articleshare-shrink_1280_800/0/1732377763761?e=1742904000&v=beta&t=CgBhFg4skTEQgClRhHoSVR8-Dp4enWM1rnxbHjKmu1k" alt="Certificaciones" class="image">
+                        <div class="study-item">
+                            <div class="image-column">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Xsc_iZH7qEQT503rYqIThiIxPUBFVMv9kw&s"
+                                    alt="Certificación SAP S/4HANA">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="cert-title-4">Modern JavaScript</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="cert-description-4">Modern JavaScript course with a focus on ES6+, asynchrony, DOM manipulation, and API consumption.</p>
+                            </div>
                         </div>
-                        <div class="title-column">
-                            <h4>
-                                Setting up an ABAP environment on SAP BTP</h4>
-                        </div>
-                        <div class="description-column">
-                            <p>This course covered the process of setting up an ABAP environment on BTP. Including configuring the ABAP runtime, integrating with SAP services and deploying cloud aplications.</p>
-                        </div>
-                    </div>
-                    <div class="content-row">
-                        <div class="image-column square-white-image">
-                            <img src="https://media.licdn.com/dms/image/sync/v2/D4D27AQEYgFYL2CnrDw/articleshare-shrink_1280_800/articleshare-shrink_1280_800/0/1732377264294?e=1742904000&v=beta&t=WY7XZYheeV5MtVYD6XfgHpJTxg7kzcYYi9WGFbPm5EY" class="image">
-                        </div>
-                        <div class="title-column">
-                            <h4>
-                                
-Exploring SAP S/4HANA Sales</h4>
-                        </div>
-                        <div class="description-column">
-                            <p>Overview of key sales processes in SAP S/4GANA SALES, including order managment, billing and delivery.</p>
-                        </div>
-                    </div>
-                    <div class="content-row">
-                        <div class="image-column square-white-image">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Xsc_iZH7qEQT503rYqIThiIxPUBFVMv9kw&s" class="image">
-                        </div>
-                        <div class="title-column">
-                            <h4>
-                                Modern JavaScript</h4>
-                        </div>
-                        <div class="description-column">
-                            <p>Guía definitiva de Javascript Moderno</p>
+                        <div class="study-item">
+                            <div class="image-column">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzgiMd6xEZ5b53Hv36FQpaRD8f7-2Jbw1k5h9lA_OFhYNY8wybyooyQfLpQMmqDoGrcYc&usqp=CAU"
+                                    alt="Certificación SAP S/4HANA">
+                            </div>
+                            <div class="title-column">
+                                <h4 id="cert-title-5">Machine learning with python</h4>
+                            </div>
+                            <div class="description-column">
+                                <p id="cert-description-5">Machine Learning with Python course, covering machine learning models, neural networks, and data processing with Scikit-Learn and TensorFlow.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
+        </section>
 
-        </div>
-    </div>
-</section>
+        <section id="contacto">
+            <h3 id="contact-title">Contact me.</h3>
+            <div class="contact-container">
+                <p id="contact-description">If you are a recruiter or a company interested in hiring me or learning more about me, you can fill out the form and I will get in touch with you as soon as possible.</p>
+                <form id="contact-form" action="https://formspree.io/f/mqapeonb"
+                    method="POST">
+                    <div class="form-group">
+                        <label for="name" id="form-name">Name:</label>
+                        <input type="text" id="input-name" name="name" required
+                            placeholder="Your full name" class="neutral">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="email" id="form-email">Email:</label>
+                        <input type="email" id="input-email" name="email" required
+                            placeholder="Your contact email" class="neutral">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
 
-<!-- Separator 1 with black background -->
-<div class="separator-container1">
-    <div class="separator1"></div>
-</div>
+                    <div class="form-group">
+                        <label for="subject" id="form-subject">Reason for contact:</label>
+                        <input type="text" id="input-subject" name="subject" required
+                            placeholder="Subject of your message" class="neutral">
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
 
-<!-- Contactame -->
-<div class="contact-container">
-    <h3>Contáctame</h3>
-    <p>Si eres un reclutador o una empresa interesada en contratarme, llena el formulario y me pondré en contacto contigo lo antes posible.</p>
+                    <div class="form-group">
+                        <label for="message" id="form-message">Message:</label>
+                        <textarea id="input-message" name="message" rows="4" required
+                            placeholder="Write your message..."
+                            class="neutral"></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
 
-    <form id="contact-form" action="https://formspree.io/f/mayvqlgb" method="POST">
-      <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
-      </div>
+                    <div class="button-container">
+                        <button type="submit" id="form-submit">Send Message</button>
+                        <button type="button" id="clear-form">Delete all</button>
+                    </div>
+                    <div id="success-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-modal">×</span>
+                            <p id="modal-message"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
 
-      <div class="form-group">
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
-      </div>
+        <section id="contacto-final" class="contact-final">
+            <div class="contact-info-container">
+                <ul class="contact-list">
+                    <li>Juan Manuel Millán Gallego</li>
+                    <li><strong>✉️ Email:</strong>
+                        juanmamillan1996@gmail.com</li>
+                    <li id="contact-phone"><strong>☎️ Mobile Phone:</strong> 🇮🇪 +353 832031822 | 🇪🇸
+                        +34 616094914</li>
+                    <li>
+                        <strong id="contact-social">Social Media:</strong>
+                        <a
+                            href="https://www.linkedin.com/in/juan-manuel-millán-gallego-619462222"
+                            target="_blank" class="social-link">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTllNbtXaEUaCuGkcHhD6Wqb7QzOD0KGeYgkw&s"
+                                alt="LinkedIn" class="social-icon">LinkedIn</a>
+                        |
+                        <a href="https://github.com/juanmamillan1996"
+                            target="_blank" class="social-link">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQnHBPL3-ZZ6HDtDmOwax0Rump0IFOIRJgmg&s"
+                                alt="GitHub" class="social-icon">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-      <div class="form-group">
-        <label for="subject">Motivo del contacto:</label>
-        <input type="text" id="subject" name="subject" required placeholder="El asunto de tu mensaje">
-      </div>
+        <button id="back-to-top" style="display: none;">↑</button>
 
-      <div class="form-group">
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required placeholder="Escribe tu mensaje"></textarea>
-      </div>
-
-      <button type="submit">Enviar Mensaje</button>
-    </form>
-  </div>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
