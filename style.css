@@ -915,3 +915,309 @@ textarea.error {
     color: #dbdbdbc0; /* Blanco con un leve toque gris */
 }
 
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: #333 url('header-background.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+#language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#language-selector .flag-icon {
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Navegación */
+nav {
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    font-size: 1.1rem;
+}
+
+/* Sección About Me */
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#about-me .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#about-me .bio {
+    max-width: 600px;
+    text-align: left;
+}
+
+#about-me .bio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Sección Knowledge Acquired */
+#knowledge-acquired {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.study-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.study-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.study-item h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.study-item p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Formulario de Contacto */
+#contacto {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contacto .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contacto input,
+#contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contacto .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#contacto button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #444;
+}
+
+/* Sección Contact Info */
+#contacto-final {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contacto-final .contact-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#contacto-final .contact-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#contacto-final .social-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#contacto-final .social-link:hover {
+    color: #0073b1;
+}
+
+#contacto-final .social-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* Botón volver al inicio */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #444;
+}
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Header y Nav */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Sección About Me */
+    #about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-me .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    /* Sección Knowledge Acquired */
+    .study-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Formulario de Contacto */
+    #contacto form {
+        width: 100%;
+    }
+
+    /* Sección Contact Info */
+    #contacto-final .contact-list li {
+        font-size: 1rem;
+    }
+
+    #contacto-final .social-link {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes para pantallas muy pequeñas */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .study-item h4 {
+        font-size: 1.2rem;
+    }
+
+    #contacto .button-container {
+        flex-direction: column;
+    }
+
+    #contacto button {
+        width: 100%;
+    }
+
+    #contacto-final .contact-list li {
+        font-size: 0.9rem;
+    }
+
+    #contacto-final .social-link {
+        font-size: 0.9rem;
+    }
+}
